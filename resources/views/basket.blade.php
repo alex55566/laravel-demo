@@ -1,11 +1,12 @@
 <x-layout>
     @section('title', 'Корзина')
     @include('navmenu.main')
+    @include('info-alert')
 
     @if (!$order)
     <div class="empty-basket">Корзина пуста</div>
     @else
-    <table>
+    <table class="basket-table">
         <caption>
             <h3>Корзина</h3>
             <div> Оформление заказа</div>
@@ -40,12 +41,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th scope="row" colspan="3"> Общая стоимость:</th>
-                <td colspan="6">
+                <th scope="row" colspan="2"> Общая стоимость:</th>
+                <th colspan="2">
                     <strong>{{ $order->getFullPrice() }} руб.</strong>
-                </td>
+                </th>
             </tr>
         </tfoot>
     </table>
+    <div class="confirm-wrapper">
+        <a class="btn confirm-order" href="{{route('basket-place')}}">Оформить заказ</a>
+    </div>
     @endif
 </x-layout>

@@ -5,6 +5,22 @@
     text-align: center;
 }
 
+.confirm-wrapper {
+    @include FlexRowEndEnd;
+}
+
+.basket-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+}
+.basket-table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+}
+
 .quantity-wrapper {
     @include FlexRowCenterCenter;
     gap: 10px;

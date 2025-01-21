@@ -1,4 +1,5 @@
 @use "./mixins" as *;
+@use "./var" as *;
 
 body {
     height: 100%;
@@ -38,6 +39,14 @@ button {
     &.opacity {
         opacity: 0.5;
     }
+}
+
+.confirm-order {
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: $colorDell;
+    color: $colorWhite;
+    border-radius: 5px;
 }
 
 .layout-page {

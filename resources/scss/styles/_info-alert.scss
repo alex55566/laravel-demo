@@ -1,0 +1,15 @@
+@use "./var" as *;
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.success {
+    background-color: rgba($colorDell, 0.5);
+}
+
+.warning {
+    background-color: rgba($colorRed, 0.5);
+}
