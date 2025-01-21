@@ -21,6 +21,10 @@ li {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     border: unset;
 }
@@ -36,9 +40,13 @@ button {
     }
 }
 
-.wrapper-center {
-    @include FlexColumn;
-    max-width: 1200px;
-    padding: 10px;
-    gap: 10px;
+.layout-page {
+    @include FlexRowCenterCenter;
+    &--wrapper {
+        @include FlexColumn;
+        max-width: 1200px;
+        width: 100%;
+        padding: 10px;
+        gap: 10px;
+    }
 }

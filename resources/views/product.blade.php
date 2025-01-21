@@ -1,4 +1,5 @@
 <x-layout>
-    <div>Продукт</div>
+    @section('title', 'Продукт')
+    @include('navmenu.main')
     <h2>{{$product}}</h2>
 </x-layout>

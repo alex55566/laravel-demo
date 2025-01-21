@@ -1,0 +1,20 @@
+@use "./mixins" as *;
+@use "./var" as *;
+
+.category {
+    @include FlexColumnCenterCenter;
+    gap: 20px;
+    padding: 10px;
+    background-color: $colorGray;
+    border-radius: 10px;
+    border: 1px solid $colorBlack;
+
+    &-link {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &-desc {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

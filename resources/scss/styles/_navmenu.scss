@@ -1,0 +1,11 @@
+@use "./mixins" as *;
+@use "./var" as *;
+
+.navmenu {
+    @include FlexRowCenterCenter;
+    gap: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $colorBlack;
+}

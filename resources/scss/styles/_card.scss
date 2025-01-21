@@ -1,0 +1,33 @@
+@use "./mixins" as *;
+@use "./var" as *;
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    .card {
+        @include FlexColumnCenterCenter;
+        width: fit-content;
+        min-width: 230px;
+        gap: 20px;
+        padding: 10px;
+        border: 1px solid $colorBlack;
+        border-radius: 10px;
+        .button-wrapper {
+            @include FlexSpaceBetween;
+            width: 100%;
+        }
+        &-btn {
+            padding: 5px 10px;
+            font-weight: 700;
+            border-radius: 10px;
+            color: $colorWhite;
+        }
+        &-basket {
+            background-color: $colorRed;
+        }
+        &-more {
+            background-color: $colorDell;
+        }
+    }
+}

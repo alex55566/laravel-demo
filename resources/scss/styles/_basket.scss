@@ -1,0 +1,32 @@
+@use "./mixins" as *;
+@use "./var" as *;
+
+.empty-basket {
+    text-align: center;
+}
+
+.quantity-wrapper {
+    @include FlexRowCenterCenter;
+    gap: 10px;
+    .form {
+        padding: 5px 10px;
+        border-radius: 5px;
+        button {
+            color: $colorWhite;
+        }
+    }
+    .product {
+        &-remove {
+            background-color: $colorRed;
+            button {
+                background-color: $colorRed;
+            }
+        }
+        &-add {
+            background-color: $colorDell;
+            button {
+                background-color: $colorDell;
+            }
+        }
+    }
+}
