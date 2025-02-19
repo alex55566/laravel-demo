@@ -204,13 +204,11 @@ const getBtnText = (type: StorageType) => {
 $colorDenim: #1574bc;
 
 .wrapper-todos {
-    @include FlexColumn;
     gap: 10px;
 }
 .wrapper-todo,
 .storage-wrapper,
 form {
-    @include FlexRowStartCenter;
     gap: 10px;
 }
 button {

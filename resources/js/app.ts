@@ -1,4 +1,4 @@
-import TodoContainer from "@components/TodoContainer.vue";
+import TodoContainer from "@/components/TodoContainer.vue";
 import VueCookies from "vue-cookies";
 import { createApp } from "vue/dist/vue.esm-bundler";
 
